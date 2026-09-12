@@ -27,6 +27,6 @@ public class LoginStepdefinition {
 
         String commonPath = ConfigReader.getProperty("CommonpathForTestData");
         String filePath = commonPath + "LoginData.csv";
-        TestDataInMap = CsvReader.getTestData(filePath, testcaseID);
+        TestDataInMap = CsvReader.GetTestDataMapFromCSV(filePath, testcaseID);
     }
 }

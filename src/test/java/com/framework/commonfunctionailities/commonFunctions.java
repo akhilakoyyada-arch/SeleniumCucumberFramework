@@ -36,4 +36,22 @@ public class commonFunctions {
             e.printStackTrace();
         }
     }
+    public static String XMLParameterReplacer(String content, String toReplace, String replacement) {
+        if(replacement==null) {
+            content= content.replace(toReplace, "") ;
+        }
+        else{
+            content= content.replace(toReplace, replacement) ;
+        }
+        return content;
+    }
+    public static String ReaddatafromSampleFile(String filePath) {
+        String contentFromSampleFile = "";
+        try {
+            contentFromSampleFile = new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(filePath)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return contentFromSampleFile;
+    }
 }

@@ -1,0 +1,2 @@
+﻿S.no,testcaseID,firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
+1,API_TC001_BookingID,Akhila,Koyyada,35678,true,2026-09-12,2026-09-13,Room NO-302

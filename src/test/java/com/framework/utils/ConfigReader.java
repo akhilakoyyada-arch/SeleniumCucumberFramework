@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-    private static final Properties properties = new Properties();
+    public static final Properties properties = new Properties();
 
     static {
         try (InputStream input = ConfigReader.class
@@ -21,6 +21,10 @@ public class ConfigReader {
         } catch (Exception e) {
             throw new RuntimeException("Failed to load global.properties", e);
         }
+    }
+
+    public static Properties getAllProperties() {
+        return properties;
     }
 
     public static String getProperty(String key) {

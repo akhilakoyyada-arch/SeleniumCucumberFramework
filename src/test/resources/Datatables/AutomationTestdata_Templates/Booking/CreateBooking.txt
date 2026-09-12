@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookingRequest>
+    <firstname>@firstname</firstname>
+    <lastname>@lastname</lastname>
+    <totalprice>@totalprice</totalprice>
+    <depositpaid>@depositpaid</depositpaid>
+    <bookingdates>
+        <checkin>@checkin</checkin>
+        <checkout>@checkout</checkout>
+    </bookingdates>
+    <additionalneeds>@additionalneeds</additionalneeds>
+</BookingRequest>
